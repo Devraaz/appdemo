@@ -13,8 +13,10 @@
         alt="img"
         class="absolute left-[15%] top-[30%] z-0 w-[200px] rounded-full opacity-15"
       />
+
       <nav class="sticky h-14 w-screen bg-slate-200 shadow-md">
-        <div
+        <button
+          id="menuBtn"
           class="absolute left-3 top-3 cursor-pointer rounded-md border border-slate-300 p-1 shadow-md"
         >
           <img
@@ -22,7 +24,7 @@
             alt=""
             class="left-2 top-3 w-5"
           />
-        </div>
+        </button>
         <div
           class="absolute right-3 top-3 cursor-pointer rounded-md p-1 shadow-md"
         >
@@ -66,10 +68,13 @@
           </div>
         </div>
       </footer>
+
       <div
-        class="sidenav absolute top-0 z-10 h-screen w-[0%] border bg-slate-300"
+        id="sideNav"
+        class="sidenav absolute top-0 z-10 h-screen w-[0%] border bg-slate-300  transition-all duration-500 ease-in-out"
       >
-        <div
+        <button
+          id="closeBtn"
           class="absolute right-3 top-3 cursor-pointer rounded-md border border-slate-300 p-1 shadow-md"
         >
           <img
@@ -77,8 +82,22 @@
             alt=""
             class="left-2 top-3 w-6"
           />
-        </div>
+        </button>
       </div>
     </div>
+
+    <script>
+        let sideNav = document.getElementById('sideNav')
+        let menuBtn = document.getElementById('menuBtn')
+        let closeBtn = document.getElementById('closeBtn')
+
+        menuBtn.addEventListener('click', () => {
+              sideNav.style.width = '80%';
+          })
+
+      closeBtn.addEventListener('click', () => {
+          sideNav.style.width = '0';
+      })
+    </script>
   </body>
 </html>
