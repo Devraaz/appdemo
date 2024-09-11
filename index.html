@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        overflow:hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="flex h-screen w-screen flex-col items-center justify-around bg-slate-100 overflow-hidden overflow-x-hidden"
+    >
+      <img
+        src="https://yt3.googleusercontent.com/1jvxEVD8WOKt2xfOcMMh7Bt75krLKzS6uYHF4JCf-8VnewA2alZhXCGL1mMiO5SG5TqSDitAnqY=s900-c-k-c0x00ffffff-no-rj"
+        alt="img"
+        class="w-[100px] rounded-full"
+      />
+
+      <div
+        class="absolute -bottom-40 z-0 h-[500px] w-[500px] rounded-full bg-blue-950 opacity-95"
+      ></div>
+      <div class="logins z-10 flex w-[80%] flex-col space-y-7">
+        <h4 class="text-center text-xl text-white">Login to your Account</h4>
+
+        <div class="flex flex-row items-center justify-between">
+          <a
+            class="flex h-24 w-24 items-center justify-center rounded-md border bg-slate-600 text-center font-semibold text-slate-100 shadow-md"
+            ><h5>Teacher</h5></a
+          >
+          <a
+            class="flex h-24 w-24 items-center justify-center rounded-md border bg-slate-600 text-center font-semibold text-slate-100 shadow-md"
+            >Parent</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
